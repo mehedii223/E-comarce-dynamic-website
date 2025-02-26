@@ -301,10 +301,28 @@
 
                 .header-box{
                     width: 100%;
+                    .list{
+                        .notification{
+                            top: 7px;
+                            right: -12%;
+                            margin-right: 15px;
+                            h2{
+                                font-size: 10px;
 
+                            }
+                        }
+                    }
                     .for-cart{
                         width: 95%;
                         left: 2%;
+                        .cart-products{
+                            width: 100%;
+                            .product{
+                                i{
+                                    padding: 6px;
+                                }
+                            }
+                        }
                     }
                     .for-girftcard{
                         width: 95%;

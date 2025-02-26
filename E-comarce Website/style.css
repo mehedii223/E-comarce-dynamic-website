@@ -2819,9 +2819,23 @@ html, body {
   .cart-banner-container .cart-banner-area .cart-content-box .header-box {
     width: 100%;
   }
+  .cart-banner-container .cart-banner-area .cart-content-box .header-box .list .notification {
+    top: 7px;
+    right: -12%;
+    margin-right: 15px;
+  }
+  .cart-banner-container .cart-banner-area .cart-content-box .header-box .list .notification h2 {
+    font-size: 10px;
+  }
   .cart-banner-container .cart-banner-area .cart-content-box .header-box .for-cart {
     width: 95%;
     left: 2%;
+  }
+  .cart-banner-container .cart-banner-area .cart-content-box .header-box .for-cart .cart-products {
+    width: 100%;
+  }
+  .cart-banner-container .cart-banner-area .cart-content-box .header-box .for-cart .cart-products .product i {
+    padding: 6px;
   }
   .cart-banner-container .cart-banner-area .cart-content-box .header-box .for-girftcard {
     width: 95%;

@@ -412,6 +412,9 @@ let itemCheking = true;
 
 items.forEach((val, num)=> {
     val.addEventListener("click", ()=> {
+        cartProductsShow.classList.remove("active")
+        chekSymbol = true;
+        
         if(itemCheking){
             cartItems.forEach((a)=> {
                 a.classList.remove("active")
