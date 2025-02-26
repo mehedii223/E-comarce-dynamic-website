@@ -1,0 +1,354 @@
+
+.product-detalls-area{
+    width: 100%;
+    .product-detalls-box{
+        width: 1500px;
+        padding: 0 150px;
+        margin: auto;
+        .product{
+            display: flex;
+            margin-top: 50px;
+            background-color: #16a9ae;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            .img{
+                width: 30%;
+                text-align: center;
+                img{
+                    width: 100%;
+
+                }
+                .list-img{
+                    width: 100%;
+                    display: flex;
+                    gap: 5px;
+                    margin: auto;
+                    img{
+                        width: 25%;
+                    }
+                }
+            }
+            .text-area{
+                width: 70%;
+                padding: 40px 0 0 30px;
+                h1{
+                    font-size: 46px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+                .price, .discount, .size{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    line-height: 40px;
+                    h4{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    label{
+                        font-size: 25px;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                }
+                .about{
+                    h4{
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        line-height: 30px;
+                        width: 60%;
+                    }
+                }
+                .button{
+                    margin-top: 10px;
+                    button{
+                        padding: 10px 30px;
+                        border-radius: 50px;
+                        border: none;
+                        outline: none;
+                        background: linear-gradient(90deg, rgba(187,96,47,1) 20%, rgba(210,72,30,1) 68%);
+                        color: #fff;
+                        &:hover{
+                            background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.new-product{
+    width: 100%;
+    .products{
+        width: 1400px;
+        margin: auto;
+        padding: 0 130px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 10px;
+        .list{
+            background-color: #16a9ae;
+            width: 23%;
+            display: flex;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            flex-grow: 1;
+            img{
+                width: 50%;
+                border-radius: 50%;
+            }
+            .text{
+                margin-left: 5px;
+                h1{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                h4{
+                    font-weight: 400;
+                    padding: 7px 0;
+                }
+                .button{
+                    button{
+                        padding: 5px 10px;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        border-radius: 50px;
+                        background: linear-gradient(90deg, rgba(187,96,47,1) 20%, rgba(210,72,30,1) 68%);
+                        &:hover{
+                            background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .product-detalls-area{
+        width: 100%;
+        .product-detalls-box{
+            width: 100%;
+            padding: 0 10px;
+            .product{
+                .img{
+                    width: 30%;
+                }
+                .text-area{
+                    width: 60%;
+                    padding: 40px 0 0 30px;
+                    h1{
+                        font-size: 22px;
+                        font-weight: 500;
+                    }
+                    .price, .discount, .size{
+                        gap: 5px;
+                        line-height: 20px;
+                        h4{
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                        label{
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-right: 10px;
+                        }
+                    }
+                    .about{
+                        margin-top: 10px;
+                        h4{
+                            font-size: 16px;
+                            margin-bottom: 4px;
+                        }
+                        p{
+                            width: 100%;
+                            line-height: 20px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .new-product{
+        width: 100%;
+        .products{
+            width: 100%;
+            padding: 0 10px;
+            .list{
+                img{
+                    width: 50%;
+                    border-radius: 50%;
+                }
+                .text{
+                    margin-left: 5px;
+                    h1{
+                        font-size: 12px;
+                    }
+                    h4{
+                        font-size: 10px;
+                    }
+                    .button{
+                        button{
+                            padding: 5px 8px;
+                            font-size: 10px;
+                            border: none;
+                            outline: none;
+                            color: #fff;
+                            border-radius: 50px;
+                            background: linear-gradient(90deg, rgba(187,96,47,1) 20%, rgba(210,72,30,1) 68%);
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-detalls-area{
+        width: 100%;
+        .product-detalls-box{
+            width: 100%;
+            padding: 0 10px;
+            margin: auto;
+            .product{
+                display: flex;
+                margin-top: 84px;
+                .img{
+                    width: 40%;
+                    text-align: center;
+                    margin-top: 5px;
+                    img{
+                        width: 100%;
+                        height: 60%;
+                    }
+                    .list-img{
+                        width: 100%;
+                        display: flex;
+                        gap: 2px;
+                        margin: auto;
+                        img{
+                            width: 25%;
+                            height: 50px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .text-area{
+                    width: 60%;
+                    padding: 0 0 0 10px;
+                    h1{
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        margin-bottom: 5px;
+                    }
+                    .price, .discount, .size{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        line-height: 20px;
+                        h4{
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                        label{
+                            font-size: 13px;
+                            font-weight: 500;
+                            margin-right: 10px;
+                        }
+                    }
+                    .about{
+                        margin-top: 10px;
+                        h4{
+                            font-size: 16px;
+                            margin-bottom: 0;
+                            font-weight: 500;
+                        }
+                        p{
+                            line-height: 21px;
+                            width: 100%;
+                            font-weight: 400;
+                            font-size: 10px;
+                        }
+                    }
+                    .button{
+                        margin-top: 10px;
+                        button{
+                            padding: 8px 16px;
+                            border-radius: 50px;
+                            font-size: 10px;
+                            border: none;
+                            outline: none;
+                            background: linear-gradient(90deg, rgba(187,96,47,1) 20%, rgba(210,72,30,1) 68%);
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                    }
+                    .size{
+                        gap: 3px;
+                        input{
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .new-product{
+        width: 100%;
+        .products{
+            width: 100%;
+            margin: auto;
+            padding: 0 10px;
+            margin: 50px 0;
+            .list{
+
+                width: 40%;
+                img{
+                    object-fit: cover;
+                }
+                .text{
+                    margin-left: 5px;
+                    h1{
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    h4{
+                        font-size: 13px;
+                        font-weight: 300;
+                        padding: 4px 0;
+                    }
+                    .button{
+                        button{
+                            padding: 5px 10px;
+                            font-size: 10px;
+                            border: none;
+                            outline: none;
+                            color: #fff;
+                            border-radius: 50px;
+                            background: linear-gradient(90deg, rgba(187,96,47,1) 20%, rgba(210,72,30,1) 68%);
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

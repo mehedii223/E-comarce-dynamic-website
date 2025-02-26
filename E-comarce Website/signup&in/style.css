@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wdth,wght@75..100,100..900&display=swap");
+/* Comon CSS style start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #c8d6e5;
+  overflow-x: hidden;
+}
+
+/* sign In css start */
+.signIn-area {
+  background: #16a9ae;
+  width: 100%;
+  height: 100vh;
+}
+.signIn-area .signIn-box {
+  width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.signIn-area .signIn-box h1 {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.signIn-area .signIn-box form {
+  background-color: #95a5a6;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 50px 0;
+  gap: 10px;
+  width: 50%;
+}
+.signIn-area .signIn-box form label {
+  margin-left: 76px;
+}
+.signIn-area .signIn-box form input {
+  width: 80%;
+  margin: auto;
+  padding: 10px 15px;
+  font-size: 20px;
+  outline: none;
+}
+.signIn-area .signIn-box form p {
+  display: flex;
+  justify-content: end;
+  margin-right: 76px;
+}
+.signIn-area .signIn-box form .btn {
+  width: 80%;
+  margin: auto;
+  background-color: #14eb6d;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.signIn-area .signIn-box form .btn:hover {
+  background-color: #17d165;
+}
+.signIn-area .signIn-box form .btn a {
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto;
+  color: #fff;
+  text-decoration: none;
+}
+.signIn-area .signIn-box form a {
+  margin-left: 76px;
+  text-decoration: none;
+  color: #fff;
+}
+.signIn-area .signIn-box form a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+  .signIn-area .signIn-box {
+    width: 100%;
+    display: block;
+    text-align: start;
+  }
+  .signIn-area .signIn-box h1 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .signIn-area .signIn-box form {
+    margin: 0 auto;
+  }
+  .signIn-area .signIn-box form {
+    width: 85%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .signIn-area {
+    width: 100%;
+  }
+  .signIn-area .signIn-box {
+    width: 100%;
+    display: block;
+  }
+  .signIn-area .signIn-box h1 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  .signIn-area .signIn-box form {
+    width: 90%;
+    margin: auto;
+  }
+  .signIn-area .signIn-box form label {
+    margin-left: 40px;
+  }
+  .signIn-area .signIn-box form input {
+    padding: 6px 15px;
+  }
+  .signIn-area .signIn-box form p {
+    margin-right: 40px;
+  }
+  .signIn-area .signIn-box form .btn {
+    padding: 6px;
+  }
+  .signIn-area .signIn-box form a {
+    margin-left: 40px;
+  }
+}
+/* sign in css end */
+
+
+/* sign up css start */
+.signUp-area {
+  background: #16a9ae;
+  width: 100%;
+}
+.signUp-area .signUp-box {
+  width: 1500px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1148px;
+}
+.signUp-area .signUp-box h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+.signUp-area .signUp-box form {
+  padding: 50px 60px;
+  border-radius: 20px;
+  background-color: #95a5a6;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+  margin: 30px 0;
+}
+.signUp-area .signUp-box form .country {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.signUp-area .signUp-box form .country .list {
+  position: absolute;
+  top: 100%;
+  width: 30%;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: 0.3s;
+}
+.signUp-area .signUp-box form .country .list li {
+  padding: 10px;
+  background-color: #16a9ae;
+}
+.signUp-area .signUp-box form .country .list li:hover {
+  background-color: #35cfd4;
+}
+.signUp-area .signUp-box form label {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.signUp-area .signUp-box form label span {
+  color: red;
+  margin-right: 6px;
+}
+.signUp-area .signUp-box form input {
+	padding: 10px 15px;
+	outline: none;
+	border: none;
+	font-size: 20px;
+}
+.signUp-area .signUp-box form .gender {
+  display: flex;
+  width: 30%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.signUp-area .signUp-box form .gender input {
+  width: 28px;
+}
+.signUp-area .signUp-box form .signupbtn {
+  background-color: #14eb6d;
+  padding: 10px 15px;
+  transition: 0.3s;
+  text-align: center;
+}
+.signUp-area .signUp-box form .signupbtn:hover {
+  background-color: #17d165;
+}
+.signUp-area .signUp-box form .signupbtn a {
+  text-decoration: none;
+  color: #fff;
+}
+.signUp-area .signUp-box form .text {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.signUp-area .signUp-box form .text input {
+  height: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  .signUp-area .signUp-box {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .signUp-area .signUp-box form {
+    width: 85%;
+  }
+  .signUp-area .signUp-box h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .signUp-area{
+    height: 100%;
+  }
+  .signUp-area .signUp-box {
+	  width: 100%;
+    padding-top: 140px;
+  }
+  .signUp-area .signUp-box form {
+    padding: 46px 16px;
+    border-radius: 10px;
+    width: 92%;
+    margin: 32px 0;
+  }
+  .signUp-area .signUp-box form input {
+    height: 32px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+  }
+  .signUp-area .signUp-box form .gender {
+    width: 55%;
+  }
+  .signUp-area .signUp-box h1 {
+    font-size: 30px;
+  }
+
+}

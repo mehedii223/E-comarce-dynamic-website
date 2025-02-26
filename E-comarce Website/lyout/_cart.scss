@@ -1,0 +1,322 @@
+
+.cart-banner-container{
+     height: 57px;
+    .cart-banner-area{
+        height: 100%;
+        background-color: black;
+        position: relative;
+        .cart-content-box{
+            width: 100%;
+            position: fixed;
+            background-color: #2993976e;
+            z-index: 500;
+            .header-box{
+                width: 1500px;
+                height: 56px;
+                display: flex;
+                margin: auto;
+                position: relative;
+                .list{
+                    width: 100px;
+                    text-align: center;
+                    padding: 10px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 8px;
+                    position: relative;
+                    &:hover{
+                        border: 2px solid #fff;
+                    }
+                    i{
+                        font-size: 20px;
+                        color: #ff6b81;
+                    }
+                    h5{
+                        font-size: 10px;
+                        font-weight: 300;
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .notification{
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        right: 35%;
+                        background-color: #16a9ae;
+                        border-radius: 50px;
+                        padding: 0 10px;
+                        h2{
+                            color: #fff;
+
+                        }
+                    }
+                    .active{
+                        display: block;
+                    }
+                }
+                .for-cart{
+                    position: absolute;
+                    top: -1000%;
+                    left: 13%;
+                    height: 500px;
+                    background-color: #16a9ae;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    border-radius: 10px;
+                    transition: 1s;
+                    .cart-products{
+                        width: 500px;
+                        text-align: left;
+                        padding: 10px;
+                        .product{
+                            background-color: #89d8e1;
+                            padding: 10px;
+                            margin-bottom: 5px;
+                            display: flex;
+                            position: relative;
+                            border-radius: 10px;
+                            img{
+                                width: 20%;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                            h2{
+                                font-weight: 600;
+                                padding: 5px;
+                                font-size: 20px;
+                            }
+                            .text{
+                                
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                h3{
+                                    font-weight: 300;
+                                }
+                                .counter{
+                                    display: flex;
+                                    border-radius: 10px;
+                                    padding: 5px;
+                                    button{
+                                        font-size: 20px;
+                                        padding: 0 10px;
+                                        border: none;
+                                        margin: 0 5px;
+                                        border-radius: 10px;
+                                    }
+                                    h3{
+                                        margin: 5px;
+
+                                    }
+                                }
+                            }
+                            i{
+                                border: 2px solid BLACK;
+                                color: black;
+                                position: absolute;
+                                right: 1%;
+                                top: 30%;
+                                padding: 10px;
+                                border-radius: 50%;
+                                transition: 0.3s;
+                                &:hover{
+                                    border: 2px solid #fff;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .total{
+                        position: relative;
+                        text-align: center;
+                        border-top: 2px solid #0000009d;
+                        margin: 0 10px;
+                        button{
+                            font-size: 18px;
+                            padding: 10px 30px;
+                            color: #fff;
+                            border: none;
+                            outline: none;
+                            border-radius: 50px;
+                            margin: 10px 0;
+                            background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                        .text{
+                            display: flex;
+                            text-align: right;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            gap: 5px;
+                            color: #0000009d;
+                            h4{
+                                font-weight: 500;
+                            }
+                        }
+
+                    }
+                }
+                .for-girftcard{
+                    position: absolute;
+                    left: 0;
+                    width: 320px;
+                    height: 500px;
+                    background-color: #16a9ae;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    border-radius: 10px;
+                    padding: 10px;
+                    text-align: center;
+                    z-index: 222;
+                    transition: 1s;
+                    h1{
+                        margin: 10px 0;
+                        text-transform: capitalize;
+                    }
+                    p{
+                        line-height: 30px;
+                    }
+                    .text{
+                        display: flex;
+                        gap: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        margin: 20px 0;
+                        h4:nth-child(1){
+                            background-color: #8e44ad;
+                            padding: 10px 20px;
+                            border-radius: 0 40px ;
+                        }
+                        h4:nth-child(2){
+                            background-color: #e74c3c;
+                            padding: 10px 20px;
+                            border-radius: 0 40px;
+                        }
+                    }
+                    button{
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 50px;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                        color: white;
+                        margin: 10px 0;
+                        &:hover{
+                            background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                        }
+                    }
+                }
+                .collect-point{
+                    position: absolute;
+                    left: 59.5%;
+                    top: 100%;
+                    width: 320px;
+                    height: 300px;
+                    background-color: #16a9ae;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    border-radius: 10px;
+                    padding: 10px;
+                    text-align: center;
+                    z-index: 222;
+                    transition: 1s;
+                    h1{
+                        margin: 10px 0;
+                        text-transform: capitalize;
+                    }
+                    h4{
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        line-height: 30px;
+                    }
+                    button{
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 50px;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                        color: white;
+                        margin: 10px 0;
+                        &:hover{
+                            background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                        }
+                    }
+                }
+                .cart-items{
+                    top: -1000%;
+                }
+                .active{
+                    top: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px){  
+    .cart-banner-container{
+        .cart-banner-area{
+            height: 100%;
+            .cart-content-box{
+                width: 100%;
+                .header-box{
+                    width: 100%;
+                    .list{
+                        .notification{
+                            top: 7%;
+                            right: 28%;
+                            h2{
+                                font-size: 15px;
+                                padding: 2px;
+                            }
+                        }
+                    }
+                    .collect-point{
+                        left: 52.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cart-banner-container{
+
+        .cart-banner-area{
+
+            .cart-content-box{
+
+                .header-box{
+                    width: 100%;
+
+                    .for-cart{
+                        width: 95%;
+                        left: 2%;
+                    }
+                    .for-girftcard{
+                        width: 95%;
+                        left: 2%;
+                    }
+                    .collect-point{
+                        width: 95%;
+                        left: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+}

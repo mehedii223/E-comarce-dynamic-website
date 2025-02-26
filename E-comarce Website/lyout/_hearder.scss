@@ -1,0 +1,255 @@
+
+.header-area{
+    width: 100%;
+    background-color: #16a9ae;
+    box-shadow: 0 0 10px rgba(31, 30, 30, 0.61);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .header-box{
+        width: 1500px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        padding: 10px 40px;
+        .w-30{
+            width: 30%;
+            .logo-box{
+                width: 50%;
+                img{
+                    width: 65%;
+                }
+            }
+        }
+        .w-70{
+            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+            nav{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .active-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    li{
+                        padding: 10px;
+                        margin-left: 34px;
+                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: #fff;
+                            &:not(.signinBtn a):hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        
+                    }
+                    .language{
+                        width: 82px;
+	                    height: 33px;
+                        box-sizing: border-box;
+                        border-radius: 50px;
+                        font-size: 13px;
+                        transition: 0.3s;
+                        padding: 2px;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        color: #fff;
+                        i{
+                            color: #fff;
+                        }
+                        img{
+                            width: 50%;
+                            height: 100%;
+                            border: 1px;
+                            border-radius: 50px;
+                            object-fit: cover;
+                            margin: 2px;
+                        }
+                        &:hover{
+                            border: 2px solid;
+                            outline: 0;
+                        }
+                    }
+                    .signinBtn{
+                        background-color: #14eb6d;
+                        border-radius: 50px;
+                        color: #fff;
+                        padding: 5px 17px;
+                        transition: 0.3s;
+                        &:hover{
+                            background-color: #1edb6d;
+                        }
+                        a{
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .barIcon{
+                    font-size: 30px;
+                    display: none;
+                }
+                .crossIcon{
+                    display: none;
+                }
+                .hidden-bar{
+                    position: absolute;
+                    background-color: #16a9aee5;
+                    width: 20%;
+                    height: 500px;
+                    top: 0;
+                    right: 0;
+                    .hidden-box{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            padding: 10px;
+                            a{
+                                font-size: 19px;
+                                font-weight: 600;
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                        }
+                        .crossIcon{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header-area{
+        width: 100%;
+        .header-box{
+            width: 100%;
+            padding: 10px 10px;
+            .w-30{
+                width: 20%;
+                .logo-box{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .w-70{
+                width: 80%;
+                nav{
+                    .active-box{
+                        li{
+                            padding: 10px;
+                            margin-left: 10px;
+                        }
+                        .language{
+                            margin-top: 2px;
+                        }
+                    }
+                    .barIcon{
+                        font-size: 30px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header-area{
+        width: 100%;
+        padding: 0;
+        .header-box{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            .w-30{
+                width: 30%;
+                .logo-box{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .w-70{
+                nav{
+                    .active-box{
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-items: normal;
+                        position: fixed;
+                        background-color: #16a9aeda;
+                        top: 0;
+                        right: -60%;
+                        width: 60%;
+                        height: 100%;
+                        padding: 0 15px;
+                        transition: 0.5s;
+                        
+                        li{
+                            margin-left: 0;
+                        }
+                        li:not(.language){
+                            border-bottom: 1px solid #33b0b46b;
+                            
+                        }
+                        .language{
+                            background-color: rgb(75, 178, 182);
+                            width: 90px;
+                            height: 37px;
+                            margin-top: 40px;
+                            font-size: 15px;
+                            gap: 2px;
+                            box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
+                            margin-bottom: 15px;
+                        }
+                        .signinBtn{
+                            width: 30%;
+                            position: absolute;
+                            right: 5%;
+                            top: 5%;
+                            padding: 3px 10px;
+                            text-align: center;
+                            box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
+                            a{
+                                font-size: 12px;
+                                
+                            }
+                        }
+                    }
+                    .ButtonActive{
+                        display: block;
+                    }
+                    .active{
+                        display: block;
+                        right: 0;
+                    }
+                    .barIcon{
+                        margin-right: 10px;
+                    }
+                    .crossIcon{
+                        position: absolute;
+                        right: 65%;
+                        top: 21%;
+                        font-size: 28px;
+                        color: #fff;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+

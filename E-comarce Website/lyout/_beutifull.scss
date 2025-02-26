@@ -1,0 +1,95 @@
+
+.beutifull-products{
+    .bt-box{
+        width: 1500px;
+        margin: auto;
+        padding: 80px 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        
+        .productList{
+            border-radius: 50px;
+            transition: 0.5s;
+            position: relative;
+            text-align: center;
+            flex-basis: 300px;
+            flex-grow: 1;
+            height: 390px;
+            h3{
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                text-transform: capitalize;
+            }
+            &:hover{
+                transform: scale(1.1);
+                background-color: none;
+                h3{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .products1{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%), url(img/beutifull/t-shirt.jpg) center center / cover;
+            display: block;
+        }
+        .products2{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%),url(img/beutifull/women.jpg) center center / cover;
+            display: block;
+        }
+        .products3{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%),url(img/beutifull/winter.jpg) center center / cover;
+            display: block;
+        }
+        .products4{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%),url(img/beutifull/most-buy.jpg) center center / cover;
+            display: block;
+        }
+        .products5{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%),url(img/beutifull/ranking.webp) center center / cover;
+            display: block;
+        }
+        .products6{
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.589) 30%, rgba(0, 0, 0, 0.534) 72%),url(img/beutifull/populer.jpg) center center / cover;
+            display: block;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+    .beutifull-products{
+        .bt-box{
+            width: 100%;
+            padding: 50px 10px 0 10px;
+            gap: 30px;
+            .productList{
+                height: 314px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .beutifull-products{
+        width: 100%;
+        .bt-box{
+            width: 100%;
+            padding: 50px 10px;
+            .productList{
+                height: 400px;
+                flex-grow: 1;
+                h3{
+                    font-size: 17px;
+                }
+                
+            }
+        }
+    }
+}
+

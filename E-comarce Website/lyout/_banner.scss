@@ -1,0 +1,741 @@
+
+.banner-container{
+    height: 1132px;
+    .banner-area{
+        width: 100%;
+        background-color: black;
+        .hero-banner{
+            width: 1500px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #2993976e;
+            height: 690px;
+            .banner-box{
+                width: 1500px;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+                .banner-img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        object-fit: cover;
+                    }
+                    img:not(.active){
+                        left: -100%;
+                    }
+                    .bg{
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9192051820728291) 18%, rgba(0,0,0,0.8603816526610644) 33%, rgba(0,0,0,0.6082808123249299) 52%, rgba(0,0,0,0.3085609243697479) 71%, rgba(0,0,0,0.6054796918767507) 85%, rgba(0,0,0,1) 100%);
+                        position: absolute;
+                        top: 0;
+
+                    }
+                }
+            }
+            .content-box{
+                width: 100%;
+                height: 57px;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                z-index: 999;
+                .header-box{
+                    
+                    height: 57px;
+                    display: flex;
+                    position: fixed;
+                    background-color: rgba(41, 147, 151, 0.431372549);
+                    border-radius:  0  0 10px 10px;
+                    .list{
+                        width: 300px;
+                        cursor: pointer;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        gap: 8px;
+                        &:hover{
+                            border: 2px solid #fff;
+                        }
+                        i{
+                            font-size: 24px;
+                            color: #ff6b81;
+                        }
+                        h5{
+                            font-size: 13px;
+                            font-weight: 300;
+                            color: #fff;
+                            text-align: center;
+                        }
+                        .notification{
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            right: 35%;
+                            background-color: #16a9ae;
+                            border-radius: 50px;
+                            padding: 0 10px;
+                            h2{
+                                color: #fff;
+                            }
+                        }
+                        .active{
+                            display: block;
+                        }
+                    }
+                    .for-cart{
+                        position: absolute;
+                        top: -1000%;
+                        left: 13%;
+                        height: 500px;
+                        background-color: #16a9ae;
+                        overflow: hidden;
+                        overflow-y: scroll;
+                        border-radius: 10px;
+                        z-index: 222;
+                        transition: 1s;
+                        .cart-products{
+                            width: 500px;
+                            text-align: left;
+                            padding: 10px;
+                            .product{
+                                background-color: #89d8e1;
+                                padding: 10px;
+                                margin-bottom: 5px;
+                                display: flex;
+                                position: relative;
+                                border-radius: 10px;
+                                img{
+                                    width: 20%;
+                                    border-radius: 50%;
+                                    margin-right: 10px;
+                                }
+                                h2{
+                                    font-weight: 600;
+                                    padding: 5px;
+                                    font-size: 20px;
+                                }
+                                .text{
+                                    
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                    h3{
+                                        font-weight: 300;
+                                    }
+                                    .counter{
+                                        display: flex;
+                                        border-radius: 10px;
+                                        padding: 5px;
+                                        button{
+                                            font-size: 20px;
+                                            padding: 0 10px;
+                                            border: none;
+                                            margin: 0 5px;
+                                            border-radius: 10px;
+                                        }
+                                        h3{
+                                            margin: 5px;
+
+                                        }
+                                    }
+                                }
+                                i{
+                                    border: 2px solid BLACK;
+                                    color: black;
+                                    position: absolute;
+                                    right: 1%;
+                                    top: 30%;
+                                    padding: 10px;
+                                    border-radius: 50%;
+                                    transition: 0.3s;
+                                    &:hover{
+                                        border: 2px solid #fff;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .total{
+                            position: relative;
+                            text-align: center;
+                            border-top: 2px solid #0000009d;
+                            margin: 0 10px;
+                            button{
+                                font-size: 18px;
+                                padding: 10px 30px;
+                                color: #fff;
+                                border: none;
+                                outline: none;
+                                border-radius: 50px;
+                                margin: 10px 0;
+                                background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                                &:hover{
+                                    background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                                }
+                            }
+                            .text{
+                                display: flex;
+                                text-align: right;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                gap: 5px;
+                                color: #0000009d;
+                                h4{
+                                    font-weight: 500;
+                                }
+                            }
+
+                        }
+                    }
+                    .for-girftcard{
+                        position: absolute;
+                        left: 0;
+                        width: 320px;
+                        height: 500px;
+                        background-color: #16a9ae;
+                        overflow: hidden;
+                        overflow-y: scroll;
+                        border-radius: 10px;
+                        padding: 10px;
+                        text-align: center;
+                        z-index: 222;
+                        transition: 1s;
+                        h1{
+                            margin: 10px 0;
+                            text-transform: capitalize;
+                        }
+                        p{
+                            line-height: 30px;
+                        }
+                        .text{
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            margin: 20px 0;
+                            h4:nth-child(1){
+                                background-color: #8e44ad;
+                                padding: 10px 20px;
+                                border-radius: 0 40px ;
+                            }
+                            h4:nth-child(2){
+                                background-color: #e74c3c;
+                                padding: 10px 20px;
+                                border-radius: 0 40px;
+                            }
+                        }
+                        button{
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 50px;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                            color: white;
+                            margin: 10px 0;
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                    }
+                    .collect-point{
+                        position: absolute;
+                        left: 59.5%;
+                        top: 100%;
+                        width: 320px;
+                        height: 300px;
+                        background-color: #16a9ae;
+                        overflow: hidden;
+                        overflow-y: scroll;
+                        border-radius: 10px;
+                        padding: 10px;
+                        text-align: center;
+                        z-index: 222;
+                        transition: 1s;
+                        h1{
+                            margin: 10px 0;
+                            text-transform: capitalize;
+                        }
+                        h4{
+                            font-size: 20px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            line-height: 30px;
+                        }
+                        button{
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 50px;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                            color: white;
+                            margin: 10px 0;
+                            &:hover{
+                                background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                            }
+                        }
+                    }
+                    .cart-items{
+                        top: -1000%;
+                    }
+                    .active{
+                        top: 100%;
+                    }
+                }
+            }
+            .text-area{
+                width: 100%;
+                position: absolute;
+                top: 35%;
+                left: 10%;
+                .text-box{
+                    width: 1500px;
+                    margin: auto;
+                    h1{
+                        text-transform: capitalize;
+                        font-size: 46px;
+                        font-weight: 900;
+                        color: #fff;
+                    }
+                    button{
+                        cursor: pointer;
+                        margin-top: 20px;
+                        padding: 10px 70px;
+                        outline: 0;
+                        border: 2px solid #Fff;
+                        background-color: transparent;
+                        border-radius: 50px;
+                        &:hover{
+                            border: 2px solid #16a9ae;
+                            a{
+                                color: #16a9ae;
+                            }
+                        }
+                        a{
+                            font-size: 30px;
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .features-area{
+                width: 100%;
+                h1{
+                    text-align: center;
+                    font-size: 46px;
+                    font-weight: 900;
+                    margin-top: 90px;
+                }
+                .active{
+                    right: 0 !important;
+                }
+                .features-box{
+                    position: static;
+                    box-shadow: none;
+                    box-sizing: border-box;
+                    display: flex;
+                    gap: 30px;
+                    padding: 10px 200px;
+                    box-sizing: border-box;
+                    justify-content: space-evenly;
+                    margin-top: 50px;
+                    .list{
+                        text-align: center;
+                        background-color: #16a9ae;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        width: 242px;
+                        height: 220px;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.5s;
+                        &:hover{
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+                            transition: 0.5s;
+                        }
+                        img{
+                            width: 76%;
+                            height: 46%;
+                            border-radius: 50%;
+
+                        }
+                        h5{
+                            font-size: 15px;
+                            border-radius: 10px;
+                            margin: 5px auto;
+                            color: rgb(54, 47, 47);
+                            padding: 5px;
+                            display: inline-block;
+                            padding: 10px 17px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+                .list:nth-child(1) h5{
+                    background-color: #89d8e1;
+                }
+                .list:nth-child(2) h5{
+                    background-color: #e189bc;
+                }
+                .list:nth-child(3) h5{
+                    background-color: #b8dd7f;
+                }
+                .list:nth-child(4) h5{
+                    background-color: #a18ed9;
+                }
+                .FbarIcon{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+    
+
+@keyframes next1 {
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2 {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .banner-container{
+        height: 825px;
+        .banner-area{
+            width: 100%;
+            .hero-banner{
+                width: 100%;
+                height: 500px;
+                .banner-box{
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .content-box{
+                    width: 100%;
+                    .header-box{
+                        width: 100%;
+                        .list{
+                            width: 20%;
+                            .notification{
+                                top: 7%;
+                                right: 28%;
+                                h2{
+                                    font-size: 15px;
+                                    padding: 2px;
+                                }
+                            }
+                        }
+                        .for-cart{
+                            left: 2%;
+                        }
+                        .collect-point{
+                            position: absolute;
+                            left: 50.5%;
+                        }
+                        .cart-items{
+                            top: -1000%;
+                        }
+                        .active{
+                            top: 100%;
+                        }
+                    }
+                }
+                .text-area{
+                    width: 100%;
+                    left: 4%;
+                    .text-box{
+                        h1{
+                            font-size: 32px;
+                        }
+                        button{
+                            padding: 10px 57px;
+                            a{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .features-area{
+                    width: 100%;
+                    h1{
+                        margin-top: 50px;
+                    }
+                    .active{
+                        right: 0 !important;
+                    }
+                    .features-box{
+                        padding: 10px 30px;
+                        margin-top: 20px;
+                        .list{
+                            height: 182px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner-container{
+        width: 100%;
+        height: 482px;
+        overflow: hidden;
+        .banner-area{
+            width: 100%;
+            height: 482px;
+            position: relative;
+            .hero-banner{
+                width: 100%;
+                .banner-box{
+                    width: 100%;
+                }
+                .content-box{
+                    width: 100%;
+                    z-index: 555;
+                    .header-box{
+                        width: 100%;
+                        height: 56px;
+                        .list{
+                            height: 100%;
+                            flex-grow: 1;
+                            padding: 10px;
+                            i{
+                                font-size: 20px;
+                            }
+                            h5{
+                                font-size: 10px;
+                                font-weight: 400;
+                            }
+                            .notification{
+                                top: 8px;
+                                right: 60%;
+                                margin-right: 15px;
+                                h2{
+                                    font-size: 10px;
+
+                                }
+                            }
+                        }
+                        .for-cart{
+                            width: 95%;
+                            height: 426px;
+                            left: 2%;
+                            .cart-products{
+                                width: 100%;
+                                .product{
+                                    
+                                    img{
+                                        width: 16%;
+                                    }
+                                    h2{
+                                        font-weight: 400;
+                                        padding: 5px;
+                                        font-size: 16px;
+                                    }
+                                    .text{
+                                        
+                                        gap: 10px;
+                                        h3{
+                                            font-size: 15px;
+                                            font-weight: 300;
+                                        }
+                                        .counter{
+                                            display: flex;
+                                            border-radius: 10px;
+                                            padding: 5px;
+                                            button{
+                                                
+                                            }
+                                            h3{
+                                                margin: 5px;
+
+                                            }
+                                        }
+                                    }
+                                    i{
+                                        padding: 6px;
+                                    }
+                                }
+                            }
+                            .total{
+                                position: relative;
+                                text-align: center;
+                                border-top: 2px solid #0000009d;
+                                margin: 0 10px;
+                                button{
+                                
+                                }
+                                .text{
+                                    right: 5px;
+                                }
+
+                            }
+                        }
+                        .for-girftcard{
+                            width: 95%;
+                            height: 426px;
+                            left: 2%;
+                            h1{
+                                margin: 10px 0;
+                                text-transform: capitalize;
+                            }
+                            p{
+                                line-height: 30px;
+                            }
+                            .text{
+                                display: flex;
+                                gap: 20px;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                                margin: 20px 0;
+                                h4:nth-child(1){
+                                    background-color: #8e44ad;
+                                    padding: 10px 20px;
+                                    border-radius: 0 40px ;
+                                }
+                                h4:nth-child(2){
+                                    background-color: #e74c3c;
+                                    padding: 10px 20px;
+                                    border-radius: 0 40px;
+                                }
+                            }
+                            button{
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 50px;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
+                                color: white;
+                                margin: 10px 0;
+                                &:hover{
+                                    background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
+                                }
+                            }
+                        }
+                        .collect-point{
+                            width: 95%;
+                            left: 2%;
+                        }
+                    }
+                }
+                .text-area{
+                    top: 46%;
+                    left: 3%;
+                    .text-box{
+                        h1{
+                            font-size: 23px;
+                            line-height: 35px;
+                        }
+                        button{
+                            margin-top: 8px;
+                            padding: 5px 30px;
+                            a{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                .active{
+                    right: 0 !important;
+                }
+                .features-area{
+                    width: 30%;
+                    position: fixed;
+                    top: 118px;
+                    right: -30%;
+                    box-shadow: -13px 0px 46px rgba(0, 0, 0, 0.856);
+                    transition: 0.3s;
+                    z-index: 888;
+                    h1{
+                        display: none;
+                    }
+                    .features-box{
+                        flex-direction: column;
+                        padding: 0;
+                        margin-top: 0;
+                        padding: 0;
+                        gap: 0;
+                        position: relative;
+                        .list{
+                            width: 100%;
+                            height: 107px;
+                            text-align: center;
+                            padding: 10px;
+                            margin: 0;
+                            border-radius: 0;
+                            box-shadow: none;
+                            img{
+                                width: 100px;
+                                
+                            }
+                            h5{
+                                font-size: 10px;
+                                color: #fff;
+                                border-radius: 10px;
+                                margin: auto;
+                                color: rgb(54, 47, 47);
+                                padding: 5px;
+                            }
+                        }
+                        .list:nth-child(1) h5{
+                            background-color: #89d8e1;
+                        }
+                        .list:nth-child(2) h5{
+                            background-color: #e189bc;
+                        }
+                        .list:nth-child(3) h5{
+                            background-color: #b8dd7f;
+                        }
+                        .list:nth-child(4) h5{
+                            background-color: #a18ed9;
+                        }
+                        .FbarIcon{
+                            display: block;
+                            position: absolute;
+                            top: 47%;
+                            left: -27%;
+                            font-size: 22px;
+                            background-color: #16a9ae;
+                            padding: 5px 10px;
+                            border-radius: 10px 0 0 10px;
+                            box-shadow: -5 0 11px rgba(0, 0, 0, 0.671);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
