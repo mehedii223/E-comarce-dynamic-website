@@ -53,7 +53,6 @@
                     .language{
                         width: 82px;
 	                    height: 33px;
-                        box-sizing: border-box;
                         border-radius: 50px;
                         font-size: 13px;
                         transition: 0.3s;
@@ -68,9 +67,7 @@
                         img{
                             width: 50%;
                             height: 100%;
-                            border: 1px;
                             border-radius: 50px;
-                            object-fit: cover;
                             margin: 2px;
                         }
                         &:hover{
@@ -130,10 +127,9 @@
 
 @media screen and (max-width: 1000px){
     .header-area{
-        width: 100%;
         .header-box{
             width: 100%;
-            padding: 10px 10px;
+            padding: 10px 20px;
             .w-30{
                 width: 20%;
                 .logo-box{
@@ -148,16 +144,11 @@
                 nav{
                     .active-box{
                         li{
-                            padding: 10px;
                             margin-left: 10px;
                         }
                         .language{
                             margin-top: 2px;
                         }
-                    }
-                    .barIcon{
-                        font-size: 30px;
-                        display: none;
                     }
                 }
             }
@@ -167,23 +158,15 @@
 
 @media screen and (max-width: 600px){
     .header-area{
-        width: 100%;
-        padding: 0;
         .header-box{
-            width: 100%;
-            margin: auto;
-            padding: 10px;
+            padding: 10px 6px;
             .w-30{
                 width: 30%;
-                .logo-box{
-                    width: 100%;
-                    img{
-                        width: 100%;
-                    }
-                }
             }
             .w-70{
+                width: 70%;
                 nav{
+                    width: 100%;
                     .active-box{
                         width: 100%;
                         flex-direction: column;
@@ -201,32 +184,24 @@
                         li{
                             margin-left: 0;
                         }
-                        li:not(.language){
-                            border-bottom: 1px solid #33b0b46b;
-                            
-                        }
                         .language{
-                            background-color: rgb(75, 178, 182);
+                            background-color: rgb(51, 199, 204);
                             width: 90px;
                             height: 37px;
-                            margin-top: 40px;
+                            margin-top: 26px;
                             font-size: 15px;
                             gap: 2px;
-                            box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
                             margin-bottom: 15px;
                         }
                         .signinBtn{
-                            width: 30%;
+                            width: 90px;
+                            height: 37px;
                             position: absolute;
                             right: 5%;
                             top: 5%;
-                            padding: 3px 10px;
-                            text-align: center;
-                            box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
-                            a{
-                                font-size: 12px;
-                                
-                            }
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                         }
                     }
                     .ButtonActive{

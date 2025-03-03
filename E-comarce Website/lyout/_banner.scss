@@ -38,14 +38,10 @@
             }
             .content-box{
                 width: 100%;
-                height: 57px;
-                margin: auto;
                 position: absolute;
                 top: 0;
-                z-index: 999;
+                z-index: 777;
                 .header-box{
-                    
-                    height: 57px;
                     display: flex;
                     position: fixed;
                     background-color: rgba(41, 147, 151, 0.431372549);
@@ -68,10 +64,8 @@
                             color: #ff6b81;
                         }
                         h5{
-                            font-size: 13px;
                             font-weight: 300;
                             color: #fff;
-                            text-align: center;
                         }
                         .notification{
                             display: none;
@@ -296,13 +290,10 @@
                 }
             }
             .text-area{
-                width: 100%;
                 position: absolute;
                 top: 35%;
                 left: 10%;
                 .text-box{
-                    width: 1500px;
-                    margin: auto;
                     h1{
                         text-transform: capitalize;
                         font-size: 46px;
@@ -332,7 +323,6 @@
                 }
             }
             .features-area{
-                width: 100%;
                 h1{
                     text-align: center;
                     font-size: 46px;
@@ -343,7 +333,6 @@
                     right: 0 !important;
                 }
                 .features-box{
-                    position: static;
                     box-shadow: none;
                     box-sizing: border-box;
                     display: flex;
@@ -353,7 +342,6 @@
                     justify-content: space-evenly;
                     margin-top: 50px;
                     .list{
-                        text-align: center;
                         background-color: #16a9ae;
                         border-radius: 50%;
                         display: flex;
@@ -379,7 +367,6 @@
                             margin: 5px auto;
                             color: rgb(54, 47, 47);
                             padding: 5px;
-                            display: inline-block;
                             padding: 10px 17px;
                             border-radius: 50px;
                         }
@@ -428,23 +415,16 @@
     .banner-container{
         height: 825px;
         .banner-area{
-            width: 100%;
             .hero-banner{
                 width: 100%;
                 height: 500px;
                 .banner-box{
                     width: 100%;
-                    height: 100%;
-                    margin: auto;
-                    position: relative;
-                    overflow: hidden;
                 }
                 .content-box{
-                    width: 100%;
                     .header-box{
                         width: 100%;
                         .list{
-                            width: 20%;
                             .notification{
                                 top: 7%;
                                 right: 28%;
@@ -470,7 +450,6 @@
                     }
                 }
                 .text-area{
-                    width: 100%;
                     left: 4%;
                     .text-box{
                         h1{
@@ -485,7 +464,7 @@
                     }
                 }
                 .features-area{
-                    width: 100%;
+
                     h1{
                         margin-top: 50px;
                     }
@@ -512,7 +491,7 @@
         overflow: hidden;
         .banner-area{
             width: 100%;
-            height: 482px;
+            height: 100%;
             position: relative;
             .hero-banner{
                 width: 100%;
@@ -523,12 +502,8 @@
                     width: 100%;
                     z-index: 555;
                     .header-box{
-                        width: 100%;
-                        height: 56px;
                         .list{
-                            height: 100%;
-                            flex-grow: 1;
-                            padding: 10px;
+
                             i{
                                 font-size: 20px;
                             }
@@ -605,44 +580,6 @@
                             width: 95%;
                             height: 426px;
                             left: 2%;
-                            h1{
-                                margin: 10px 0;
-                                text-transform: capitalize;
-                            }
-                            p{
-                                line-height: 30px;
-                            }
-                            .text{
-                                display: flex;
-                                gap: 20px;
-                                justify-content: center;
-                                align-items: center;
-                                color: #fff;
-                                margin: 20px 0;
-                                h4:nth-child(1){
-                                    background-color: #8e44ad;
-                                    padding: 10px 20px;
-                                    border-radius: 0 40px ;
-                                }
-                                h4:nth-child(2){
-                                    background-color: #e74c3c;
-                                    padding: 10px 20px;
-                                    border-radius: 0 40px;
-                                }
-                            }
-                            button{
-                                padding: 10px 20px;
-                                border: none;
-                                border-radius: 50px;
-                                font-size: 20px;
-                                text-transform: uppercase;
-                                background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
-                                color: white;
-                                margin: 10px 0;
-                                &:hover{
-                                    background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
-                                }
-                            }
                         }
                         .collect-point{
                             width: 95%;
@@ -660,9 +597,9 @@
                         }
                         button{
                             margin-top: 8px;
-                            padding: 5px 30px;
+                            padding: 10px 40px;
                             a{
-                                font-size: 10px;
+                                font-size: 15px;
                             }
                         }
                     }
@@ -709,22 +646,10 @@
                                 padding: 5px;
                             }
                         }
-                        .list:nth-child(1) h5{
-                            background-color: #89d8e1;
-                        }
-                        .list:nth-child(2) h5{
-                            background-color: #e189bc;
-                        }
-                        .list:nth-child(3) h5{
-                            background-color: #b8dd7f;
-                        }
-                        .list:nth-child(4) h5{
-                            background-color: #a18ed9;
-                        }
                         .FbarIcon{
                             display: block;
                             position: absolute;
-                            top: 47%;
+                            top: 43%;
                             left: -27%;
                             font-size: 22px;
                             background-color: #16a9ae;

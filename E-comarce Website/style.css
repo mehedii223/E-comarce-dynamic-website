@@ -77,7 +77,6 @@ html, body {
 .header-area .header-box .w-70 nav .active-box .language {
   width: 82px;
   height: 33px;
-  box-sizing: border-box;
   border-radius: 50px;
   font-size: 13px;
   transition: 0.3s;
@@ -93,10 +92,7 @@ html, body {
 .header-area .header-box .w-70 nav .active-box .language img {
   width: 50%;
   height: 100%;
-  border: 1px;
   border-radius: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin: 2px;
 }
 .header-area .header-box .w-70 nav .active-box .language:hover {
@@ -149,12 +145,9 @@ html, body {
 }
 
 @media screen and (max-width: 1000px) {
-  .header-area {
-    width: 100%;
-  }
   .header-area .header-box {
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
   .header-area .header-box .w-30 {
     width: 20%;
@@ -169,34 +162,23 @@ html, body {
     width: 80%;
   }
   .header-area .header-box .w-70 nav .active-box li {
-    padding: 10px;
     margin-left: 10px;
   }
   .header-area .header-box .w-70 nav .active-box .language {
     margin-top: 2px;
   }
-  .header-area .header-box .w-70 nav .barIcon {
-    font-size: 30px;
-    display: none;
-  }
 }
 @media screen and (max-width: 600px) {
-  .header-area {
-    width: 100%;
-    padding: 0;
-  }
   .header-area .header-box {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
+    padding: 10px 6px;
   }
   .header-area .header-box .w-30 {
     width: 30%;
   }
-  .header-area .header-box .w-30 .logo-box {
-    width: 100%;
+  .header-area .header-box .w-70 {
+    width: 70%;
   }
-  .header-area .header-box .w-30 .logo-box img {
+  .header-area .header-box .w-70 nav {
     width: 100%;
   }
   .header-area .header-box .w-70 nav .active-box {
@@ -216,30 +198,24 @@ html, body {
   .header-area .header-box .w-70 nav .active-box li {
     margin-left: 0;
   }
-  .header-area .header-box .w-70 nav .active-box li:not(.language) {
-    border-bottom: 1px solid rgba(51, 176, 180, 0.4196078431);
-  }
   .header-area .header-box .w-70 nav .active-box .language {
-    background-color: rgb(75, 178, 182);
+    background-color: rgb(51, 199, 204);
     width: 90px;
     height: 37px;
-    margin-top: 40px;
+    margin-top: 26px;
     font-size: 15px;
     gap: 2px;
-    box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
     margin-bottom: 15px;
   }
   .header-area .header-box .w-70 nav .active-box .signinBtn {
-    width: 30%;
+    width: 90px;
+    height: 37px;
     position: absolute;
     right: 5%;
     top: 5%;
-    padding: 3px 10px;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(48, 45, 45, 0.589);
-  }
-  .header-area .header-box .w-70 nav .active-box .signinBtn a {
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header-area .header-box .w-70 nav .ButtonActive {
     display: block;
@@ -299,14 +275,11 @@ html, body {
 }
 .banner-container .banner-area .hero-banner .content-box {
   width: 100%;
-  height: 57px;
-  margin: auto;
   position: absolute;
   top: 0;
-  z-index: 999;
+  z-index: 777;
 }
 .banner-container .banner-area .hero-banner .content-box .header-box {
-  height: 57px;
   display: flex;
   position: fixed;
   background-color: rgba(41, 147, 151, 0.431372549);
@@ -331,10 +304,8 @@ html, body {
   color: #ff6b81;
 }
 .banner-container .banner-area .hero-banner .content-box .header-box .list h5 {
-  font-size: 13px;
   font-weight: 300;
   color: #fff;
-  text-align: center;
 }
 .banner-container .banner-area .hero-banner .content-box .header-box .list .notification {
   display: none;
@@ -553,14 +524,9 @@ html, body {
   top: 100%;
 }
 .banner-container .banner-area .hero-banner .text-area {
-  width: 100%;
   position: absolute;
   top: 35%;
   left: 10%;
-}
-.banner-container .banner-area .hero-banner .text-area .text-box {
-  width: 1500px;
-  margin: auto;
 }
 .banner-container .banner-area .hero-banner .text-area .text-box h1 {
   text-transform: capitalize;
@@ -588,9 +554,6 @@ html, body {
   text-decoration: none;
   color: #fff;
 }
-.banner-container .banner-area .hero-banner .features-area {
-  width: 100%;
-}
 .banner-container .banner-area .hero-banner .features-area h1 {
   text-align: center;
   font-size: 46px;
@@ -601,7 +564,6 @@ html, body {
   right: 0 !important;
 }
 .banner-container .banner-area .hero-banner .features-area .features-box {
-  position: static;
   box-shadow: none;
   box-sizing: border-box;
   display: flex;
@@ -612,7 +574,6 @@ html, body {
   margin-top: 50px;
 }
 .banner-container .banner-area .hero-banner .features-area .features-box .list {
-  text-align: center;
   background-color: #16a9ae;
   border-radius: 50%;
   display: flex;
@@ -638,7 +599,6 @@ html, body {
   margin: 5px auto;
   color: rgb(54, 47, 47);
   padding: 5px;
-  display: inline-block;
   padding: 10px 17px;
   border-radius: 50px;
 }
@@ -678,28 +638,15 @@ html, body {
   .banner-container {
     height: 825px;
   }
-  .banner-container .banner-area {
-    width: 100%;
-  }
   .banner-container .banner-area .hero-banner {
     width: 100%;
     height: 500px;
   }
   .banner-container .banner-area .hero-banner .banner-box {
     width: 100%;
-    height: 100%;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-  }
-  .banner-container .banner-area .hero-banner .content-box {
-    width: 100%;
   }
   .banner-container .banner-area .hero-banner .content-box .header-box {
     width: 100%;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .list {
-    width: 20%;
   }
   .banner-container .banner-area .hero-banner .content-box .header-box .list .notification {
     top: 7%;
@@ -723,7 +670,6 @@ html, body {
     top: 100%;
   }
   .banner-container .banner-area .hero-banner .text-area {
-    width: 100%;
     left: 4%;
   }
   .banner-container .banner-area .hero-banner .text-area .text-box h1 {
@@ -734,9 +680,6 @@ html, body {
   }
   .banner-container .banner-area .hero-banner .text-area .text-box button a {
     font-size: 20px;
-  }
-  .banner-container .banner-area .hero-banner .features-area {
-    width: 100%;
   }
   .banner-container .banner-area .hero-banner .features-area h1 {
     margin-top: 50px;
@@ -760,7 +703,7 @@ html, body {
   }
   .banner-container .banner-area {
     width: 100%;
-    height: 482px;
+    height: 100%;
     position: relative;
   }
   .banner-container .banner-area .hero-banner {
@@ -772,15 +715,6 @@ html, body {
   .banner-container .banner-area .hero-banner .content-box {
     width: 100%;
     z-index: 555;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box {
-    width: 100%;
-    height: 56px;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .list {
-    height: 100%;
-    flex-grow: 1;
-    padding: 10px;
   }
   .banner-container .banner-area .hero-banner .content-box .header-box .list i {
     font-size: 20px;
@@ -845,44 +779,6 @@ html, body {
     height: 426px;
     left: 2%;
   }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard h1 {
-    margin: 10px 0;
-    text-transform: capitalize;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard p {
-    line-height: 30px;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard .text {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin: 20px 0;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard .text h4:nth-child(1) {
-    background-color: #8e44ad;
-    padding: 10px 20px;
-    border-radius: 0 40px;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard .text h4:nth-child(2) {
-    background-color: #e74c3c;
-    padding: 10px 20px;
-    border-radius: 0 40px;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
-    color: white;
-    margin: 10px 0;
-  }
-  .banner-container .banner-area .hero-banner .content-box .header-box .for-girftcard button:hover {
-    background: linear-gradient(90deg, rgba(187, 96, 47, 0.87) 20%, rgba(210, 72, 30, 0.856) 68%);
-  }
   .banner-container .banner-area .hero-banner .content-box .header-box .collect-point {
     width: 95%;
     left: 2%;
@@ -897,10 +793,10 @@ html, body {
   }
   .banner-container .banner-area .hero-banner .text-area .text-box button {
     margin-top: 8px;
-    padding: 5px 30px;
+    padding: 10px 40px;
   }
   .banner-container .banner-area .hero-banner .text-area .text-box button a {
-    font-size: 10px;
+    font-size: 15px;
   }
   .banner-container .banner-area .hero-banner .active {
     right: 0 !important;
@@ -945,22 +841,10 @@ html, body {
     color: rgb(54, 47, 47);
     padding: 5px;
   }
-  .banner-container .banner-area .hero-banner .features-area .features-box .list:nth-child(1) h5 {
-    background-color: #89d8e1;
-  }
-  .banner-container .banner-area .hero-banner .features-area .features-box .list:nth-child(2) h5 {
-    background-color: #e189bc;
-  }
-  .banner-container .banner-area .hero-banner .features-area .features-box .list:nth-child(3) h5 {
-    background-color: #b8dd7f;
-  }
-  .banner-container .banner-area .hero-banner .features-area .features-box .list:nth-child(4) h5 {
-    background-color: #a18ed9;
-  }
   .banner-container .banner-area .hero-banner .features-area .features-box .FbarIcon {
     display: block;
     position: absolute;
-    top: 47%;
+    top: 43%;
     left: -27%;
     font-size: 22px;
     background-color: #16a9ae;
@@ -1175,7 +1059,7 @@ html, body {
 
 @keyframes upDown1 {
   from {
-    top: 28%;
+    top: 29%;
   }
   to {
     top: -40%;
@@ -1186,60 +1070,26 @@ html, body {
     top: 90%;
   }
   to {
-    top: 28%;
+    top: 29%;
   }
 }
 @media screen and (max-width: 1000px) {
-  .products-area {
-    width: 100%;
-  }
   .products-area .products-box {
     width: 100%;
-    margin: auto;
     padding: 10px 10px;
-    box-sizing: border-box;
-    margin-top: 90px;
-    position: relative;
-  }
-  .products-area .products-box h1 {
-    text-align: center;
-    font-size: 46px;
-    font-weight: 900;
-    margin-bottom: 20px;
   }
   .products-area .products-box .serch-box {
     padding: 20.5px 60px;
   }
-  .products-area .products-box .serch-box form {
-    width: 100%;
-  }
   .products-area .products-box .serch-box form input {
     width: 85%;
-  }
-  .products-area .products-box .serch-box form .placeholder {
-    position: absolute;
-    font-size: 20px;
-    color: rgba(39, 35, 35, 0.5058823529);
-    top: 25%;
-    left: 2%;
-  }
-  .products-area .products-box .serch-box form .placeholder:not(.active) {
-    top: -40%;
-  }
-  .products-area .products-box .serch-box form #submit {
-    width: 20%;
   }
   .products-area .products-box .products-detals {
     padding: 10px 50px;
   }
 }
 @media screen and (max-width: 600px) {
-  .products-area {
-    position: relative;
-    margin-bottom: 50px;
-  }
   .products-area .products-box {
-    width: 100%;
     padding: 0px;
     margin-top: 35px;
   }
@@ -1249,30 +1099,22 @@ html, body {
   }
   .products-area .products-box .serch-box {
     padding: 0 20px;
-    box-sizing: border-box;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 20px;
   }
   .products-area .products-box .serch-box form {
-    box-sizing: border-box;
     padding: 0 0 0 10px;
-    width: 100%;
     height: 48px;
-    border-radius: 50px;
     border: 1px solid rgba(49, 45, 45, 0.3215686275);
-    display: flex;
   }
   .products-area .products-box .serch-box form .placeholder {
     font-size: 15px;
-    color: rgba(39, 35, 35, 0.5058823529);
-    left: 7%;
+    left: 5%;
+    top: 29%;
   }
   .products-area .products-box .serch-box form input {
-    background-color: transparent;
-    border: none;
-    outline: none;
+    padding: 5px 10px;
     width: 87%;
-    height: 100%;
     font-size: 15px;
     z-index: 300;
   }
@@ -1281,110 +1123,50 @@ html, body {
     font-size: 17px;
   }
   .products-area .products-box .products-detals {
-    display: flex;
-    gap: 5px;
     padding: 10px 20px;
-    position: sticky;
-    top: 0;
     margin-top: 15px;
   }
   .products-area .products-box .products-detals button {
     flex-grow: 1;
     padding: 5px;
-    background-color: #16a9ae;
-    border: none;
-    outline: 0;
-    border-radius: 50px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  .products-area .products-box .products-detals .active {
-    background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
   }
   .products-area .products-box .product-box {
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     height: 600px;
-    overflow: hidden;
-    overflow-y: scroll;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10px 17px;
     justify-content: space-around;
-    align-items: start;
-  }
-  .products-area .products-box .product-box .hide {
-    display: none;
   }
   .products-area .products-box .product-box .list {
     flex-basis: 120px;
-    background-color: #16a9ae;
-    padding: 5px;
     border-radius: 10px;
-    color: #fff;
-    position: relative;
   }
   .products-area .products-box .product-box .list .text {
     height: 40px;
   }
   .products-area .products-box .product-box .list .text h5 {
     font-size: 15px;
-    font-weight: 300;
-    margin-bottom: 5px;
   }
   .products-area .products-box .product-box .list img {
-    width: 100%;
     border-radius: 10px;
   }
   .products-area .products-box .product-box .list p {
-    margin-top: 5px;
     font-size: 14px;
   }
   .products-area .products-box .product-box .list h4 {
-    position: absolute;
-    right: 5%;
-    background: linear-gradient(90deg, rgb(167, 61, 72) 34%, rgb(210, 30, 97) 79%);
     padding: 5px;
     font-size: 10px;
     bottom: 20%;
-    border: none;
-    outline: none;
     border-radius: 21px 8px 8px 3px;
   }
   .products-area .products-box .product-box .list a {
-    background: linear-gradient(90deg, rgb(187, 96, 47) 20%, rgb(210, 72, 30) 68%);
-    color: #fff;
     padding: 5px 10px;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 5px;
     font-size: 16px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.466);
-  }
-  .products-area .products-box .notFund-area {
-    display: none;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
   }
   .products-area .products-box .notFund-area img {
     height: 200px;
   }
   .products-area .products-box .notFund-area h4 {
-    font-weight: 300;
     font-size: 16px;
-    color: red;
-    padding: 10px;
-    text-transform: capitalize;
   }
 }
 .discount-bg {
@@ -1432,17 +1214,11 @@ html, body {
   }
 }
 @media screen and (max-width: 600px) {
-  .discount-bg {
-    width: 100%;
-  }
   .discount-bg h1 {
     font-size: 24px;
   }
   .discount-bg p {
     font-size: 10px;
-  }
-  .discount-bg .btn {
-    margin-top: 20px;
   }
   .discount-bg .btn a {
     font-size: 12px;
@@ -1518,9 +1294,6 @@ html, body {
   }
 }
 @media screen and (max-width: 600px) {
-  .beutifull-products {
-    width: 100%;
-  }
   .beutifull-products .bt-box {
     width: 100%;
     padding: 50px 10px;
@@ -1631,20 +1404,12 @@ html, body {
 }
 
 @media screen and (max-width: 1000px) {
-  .footer-area {
-    width: 100%;
-  }
   .footer-area .footer-box {
     width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  .footer-area {
-    width: 100%;
-  }
   .footer-area .footer-box {
-    width: 100%;
-    margin: auto;
     padding: 0;
   }
   .footer-area .footer-box .intro {
@@ -1655,12 +1420,6 @@ html, body {
   .footer-area .footer-box .intro img {
     width: 70px;
     height: 65px;
-  }
-  .footer-area .footer-box .intro .text h3 {
-    font-size: 15px;
-  }
-  .footer-area .footer-box .intro .text p {
-    font-size: 10px;
   }
   .footer-area .footer-box .helpCenter {
     padding: 30px 10px;
@@ -1689,14 +1448,8 @@ html, body {
   .footer-area .footer-box .address {
     padding: 10px 0;
   }
-  .footer-area .footer-box .address .parivacy {
-    margin-bottom: 5px;
-  }
   .footer-area .footer-box .address .parivacy a {
     font-size: 8px;
-  }
-  .footer-area .footer-box .address .parivacy a:hover {
-    text-decoration: underline;
   }
   .footer-area .footer-box .address h3 {
     font-size: 8px;

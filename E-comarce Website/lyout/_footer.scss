@@ -103,7 +103,6 @@
 
 @media screen and (max-width: 1000px) {
     .footer-area {
-        width: 100%;
         .footer-box{
             width: 100%;
         }
@@ -112,10 +111,7 @@
 
 @media screen and (max-width: 600px) {
     .footer-area {
-        width: 100%;
         .footer-box{
-            width: 100%;
-            margin: auto;
             padding: 0;
             .intro{
                 border-radius: 0;
@@ -124,14 +120,6 @@
                 img{
                     width: 70px;
                     height: 65px;
-                }
-                .text{
-                    h3{
-                        font-size: 15px;
-                    }
-                    p{
-                        font-size: 10px;
-                    }
                 }
             }
             .helpCenter{
@@ -165,12 +153,8 @@
             .address{
                 padding: 10px 0;
                 .parivacy{
-                    margin-bottom: 5px;
                     a{
                         font-size: 8px;
-                        &:hover{
-                            text-decoration: underline;
-                        }
                     }
                 }
                 h3{

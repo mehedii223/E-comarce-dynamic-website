@@ -98,7 +98,6 @@ function listDivFun(){
 
 // alltime add products
 listDivFun()
-
 // button select
 for(let i = 0; i < pButton.length; i++){
 
@@ -109,15 +108,15 @@ for(let i = 0; i < pButton.length; i++){
         pButton.forEach((a)=> a.className = "");
         pButton[i].classList.add("active");
 
-        if(pButton[i].innerHTML.toUpperCase() === "ALL"){
-            let element = productsBox.children;
-            for(let list in element){
-                element(list).remove()
-            }
+        let productName = document.querySelectorAll(".list .text h5");
 
-            listDivFun()
+        if(pButton[i].innerHTML.toUpperCase() === "ALL"){
+            productName.forEach((product)=> {
+                let list = product.parentElement.parentElement;
+
+                list.classList.remove("hide")
+            })
         }else{
-            let productName = document.querySelectorAll(".list .text h5");
             let Buttonvalue = pButton[i].innerHTML.toLowerCase();
 
             productName.forEach((product)=> {

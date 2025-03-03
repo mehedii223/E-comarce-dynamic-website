@@ -82,11 +82,15 @@ for(let i = 0; i < pButton.length; i++){
         pButton.forEach((a)=> a.className = "");
         pButton[i].classList.add("active");
 
+        let productName = document.querySelectorAll(".list .text h5");
+
         if(pButton[i].innerHTML.toUpperCase() === "ALL"){
-            productsBox.innerHTML = ""
-            listDivFun()
+            productName.forEach((product)=> {
+                let list = product.parentElement.parentElement;
+
+                list.classList.remove("hide")
+            })
         }else{
-            let productName = document.querySelectorAll(".list .text h5");
             let Buttonvalue = pButton[i].innerHTML.toLowerCase();
 
             productName.forEach((product)=> {
